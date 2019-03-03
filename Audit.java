@@ -43,7 +43,9 @@ class DirectoryCount implements Runnable{
             }catch (IOException e){
                 e.printStackTrace();
             }
-            return sum;
+            finally{
+                return sum;     
+            }
         }
         //如果是目录
         else{
